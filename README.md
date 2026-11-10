@@ -39,13 +39,13 @@ data, `train_test_subject_overlap` (0 under the leakage-safe protocol).
 
 | Result in the paper | Value | Source of the number | Re-run with this repository? |
 |---|---|---|---|
-| CSP+CNN test accuracy | 62.35 % | Original code not in the archive | Reimplemented; **must be re-run** |
+| CSP+CNN test accuracy | 62.35 % | Original run (split not recoverable) | **Re-run: 59.39 % subject-grouped, 61.33 % record-level** |
 | Train–test gap | 5.37 pts | Original code not in the archive | Reported as `train_accuracy` in the result JSON |
 
 ## Points to resolve against the manuscript
 
-* Table 1 says the 80/20 split is subject-independent, but Algorithm 2, step 1, says it is stratified by class
-  label (a record-level split). Run both protocols and keep the one that produced the reported figure.
+* Both protocols were re-run (Colab T4): 59.39 % subject-grouped, 61.33 % class-stratified record-level. The manuscript
+  now states the subject-grouped split and reports 59.39 % as the reproducible subject-independent estimate.
 * The head of Table 3 (Conv1D 16 → Conv1D 32 → MaxPool → Dense 32 → Dense 16 → 1) has **9,473** trainable
   parameters with a Flatten layer, not ≈2,993 (`tests/test_models.py`).
 * Validation fraction, maximum epochs and early-stopping patience are not stated in the paper; this code uses
