@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: If you use this software, please cite the accompanying manuscript.
+title: "eeg-mi-fbcsp-cnn"
+type: software
+license: MIT
+repository-code: https://github.com/aftab802/eeg-mi-fbcsp-cnn
+version: 1.0.0
+date-released: '2026-11-11'
+authors:
+  - family-names: "ur Rehman"
+    given-names: "Muhammad Aftab"
+    affiliation: "CYBEX – School of IT Professionals (Pvt) Limited, Faisalabad, Pakistan"
+  - family-names: "ur Rehman"
+    given-names: "Muhammad Awais"
+    affiliation: "CYBEX – School of IT Professionals (Pvt) Limited, Faisalabad, Pakistan"
+  - family-names: "Latif Aziz"
+    given-names: "Muhammad Saqib"
+    affiliation: "CYBEX – School of IT Professionals (Pvt) Limited, Faisalabad, Pakistan"
+preferred-citation:
+  type: article
+  title: "CSP+CNN: Filter-Bank Common Spatial Patterns with a Convolutional Classifier for Motor Imagery Classification from EEG"
+  status: submitted
+  year: 2026
+  authors:
+    - family-names: "ur Rehman"
+      given-names: "Muhammad Aftab"
+    - family-names: "ur Rehman"
+      given-names: "Muhammad Awais"
+    - family-names: "Latif Aziz"
+      given-names: "Muhammad Saqib"
